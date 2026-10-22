@@ -29,7 +29,7 @@ Quant Finance · LLM R&D · Natural Language Processing (NLP)
 
 ## Coursework
 
-Finance · Artificial Intelligence · CS229 Machine Learning · CS230 Deep Learning · Management
+Finance · Artificial Intelligence · Management
 
 ## Education
 
