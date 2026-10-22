@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Linus · 个人主页 / Resume</title>
+<!--
+  ============================================================
+  GitHub Pages 个人简历 — 双语（中文 / English）单文件版
+  部署：把本文件命名为 index.html 推到仓库，开启 Pages 即可。
+  需替换的占位符（全文搜索 {{...}}）：
+    {{GITHUB_USERNAME}}  你的 GitHub 用户名（用于站点链接与头像）
+    {{REAL_NAME}}        真实姓名（可选，不填可保留 Linus）
+    {{EMAIL}}            联系邮箱
+    {{CITY}}             所在城市
+    {{UNIVERSITY}}       学校名称
+    {{MAJOR}}            专业名称
+    {{DEGREE}}           学位（本科/硕士等）
+    {{YEAR_START}}       入学年份
+    {{YEAR_END}}         毕业年份（预计）
+    {{QUANT_REPO}}       QuantTerminal 仓库地址
+    {{GEAR_REPO}}        滚齿机挂轮计算器仓库地址
+  ============================================================
+-->
+<style>
+  :root{
+    --bg:#0b0e14;
+    --bg-soft:#11151f;
+    --panel:#141a26;
+    --panel-2:#1a2233;
+    --border:#232c3d;
+    --text:#e6edf3;
+    --text-dim:#9aa7b8;
+    --text-faint:#6b7689;
+    --accent:#2dd4bf;      /* teal */
+    --accent-2:#f5b942;    /* gold */
+    --up:#ff5c5c;          /* 涨=红（A股习惯） */
+    --down:#3fb950;        /* 跌=绿 */
+    --radius:14px;
+    --mono:"SF Mono",ui-monospace,"JetBrains Mono",Consolas,Menlo,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(45,212,191,.08), transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, rgba(245,185,66,.06), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:64px;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 28px;
+    background:rgba(11,14,20,.72);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .brand{font-family:var(--mono);font-weight:600;letter-spacing:.5px;color:var(--text)}
+  .brand .dot{color:var(--accent)}
+  .lang-toggle{
+    display:inline-flex;border:1px solid var(--border);border-radius:999px;overflow:hidden;
+    font-family:var(--mono);font-size:13px;
+  }
+  .lang-toggle button{
+    background:transparent;color:var(--text-dim);border:0;padding:6px 14px;cursor:pointer;
+    font-family:var(--mono);font-size:13px;transition:.15s;
+  }
+  .lang-toggle button.active{background:var(--accent);color:#04121;font-weight:600}
+  .lang-toggle button:not(.active):hover{color:var(--text)}
+
+  /* ---------- layout ---------- */
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+  section{padding:40px 0;border-bottom:1px solid var(--border)}
+  section:last-of-type{border-bottom:0}
+
+  /* hero */
+  .hero{padding-top:56px}
+  .hero h1{font-size:40px;line-height:1.15;font-weight:700;letter-spacing:-.5px}
+  .hero .title{margin-top:10px;color:var(--accent-2);font-family:var(--mono);font-size:15px}
+  .hero .tagline{margin-top:18px;color:var(--text-dim);max-width:640px}
+  .contacts{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .chip{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:7px 13px;border:1px solid var(--border);border-radius:10px;
+    background:var(--panel);color:var(--text-dim);font-size:13px;font-family:var(--mono);
+  }
+  .chip b{color:var(--text);font-weight:500}
+
+  h2.sec{
+    font-size:13px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--text-faint);font-family:var(--mono);margin-bottom:18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  h2.sec::before{content:"";width:22px;height:2px;background:var(--accent);display:inline-block}
+
+  p.body{color:var(--text-dim);max-width:720px}
+  p.body + p.body{margin-top:12px}
+
+  /* skills grid */
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .skill-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px}
+  .skill-card h3{font-size:14px;color:var(--text);margin-bottom:10px;font-family:var(--mono)}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{
+    font-size:12px;padding:4px 10px;border-radius:8px;
+    background:var(--panel-2);border:1px solid var(--border);color:var(--text-dim);
+  }
+
+  /* projects */
+  .proj{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+  .proj:last-child{margin-bottom:0}
+  .proj .row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .proj h3{font-size:18px;color:var(--text)}
+  .proj .stack{font-family:var(--mono);font-size:12px;color:var(--accent);margin-top:4px}
+  .proj p{color:var(--text-dim);margin-top:12px;font-size:14px}
+  .proj .links{margin-top:14px;display:flex;gap:14px;font-size:13px;font-family:var(--mono)}
+
+  /* education */
+  .edu .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .edu h3{font-size:17px;color:var(--text)}
+  .edu .meta{color:var(--text-faint);font-family:var(--mono);font-size:13px}
+
+  /* coursework / interests as chips */
+  .flow{display:flex;flex-wrap:wrap;gap:10px}
+
+  footer{text-align:center;color:var(--text-faint);font-size:12px;font-family:var(--mono);padding:32px 0 0}
+
+  /* ---------- bilingual switching ---------- */
+  body.lang-zh .en{display:none}
+  body.lang-en .zh{display:none}
+  body.lang-en{/* english base */}
+
+  @media (max-width:640px){
+    .hero h1{font-size:30px}
+    .skills{grid-template-columns:1fr}
+    .topbar{padding:12px 16px}
+    .wrap{padding:0 16px}
+  }
+
+  /* ---------- print ---------- */
+  @media print{
+    :root{
+      --bg:#fff;--bg-soft:#fff;--panel:#fff;--panel-2:#f4f6f9;--border:#d9dee7;
+      --text:#0b0e14;--text-dim:#333;--text-faint:#666;
+      --accent:#0f766e;--accent-2:#9a6a00;
+    }
+    body{background:#fff;color:#0b0e14;padding:0}
+    .topbar{position:static;background:#fff;border-bottom:1px solid #d9dee7}
+    section{border-bottom:1px solid #e2e6ee;page-break-inside:avoid}
+    .lang-toggle{display:none}
+    a{color:#0f766e}
+  }
+</style>
+</head>
+<body class="lang-zh">
+  <div class="topbar">
+    <div class="brand">Linus<span class="dot">.</span>dev</div>
+    <div class="lang-toggle" id="langToggle">
+      <button data-lang="zh" class="active">中文</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <h1>{{REAL_NAME | Linus}}</h1>
+      <div class="title">
+        <span class="zh">计算机专业学生 · 开发者 — 量化与桌面应用方向</span>
+        <span class="en">CS Student · Developer — Quant &amp; Desktop Applications</span>
+      </div>
+      <p class="tagline">
+        <span class="zh">专注于 C++/Qt 桌面终端与量化分析工具开发，热衷高性能 UI 渲染与系统化工程实践。当前主推个人金融分析终端 QuantTerminal。</span>
+        <span class="en">Focused on C++/Qt desktop terminals and quant-analysis tooling, with a passion for high-performance UI rendering and systematic engineering. Currently building QuantTerminal, a personal financial-analysis terminal.</span>
+      </p>
+      <div class="contacts">
+        <span class="chip">GitHub <b>github.com/{{GITHUB_USERNAME}}</b></span>
+        <span class="chip">Email <b>{{EMAIL}}</b></span>
+        <span class="chip">Location <b>{{CITY}}</b></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="sec"><span class="zh">关于</span><span class="en">About</span></h2>
+      <p class="body">
+        <span class="zh">兼具开发者与学生双重背景。工程上坚持在既定技术栈内迭代修复，推崇严谨测试、根因分析与防御性编码；研究上持续追踪 AI Coding、具身智能、大模型定价趋势与半导体 ETF 持仓动态。</span>
+        <span class="en">A dual-profile developer and student. On engineering, I iterate within the chosen stack, favoring rigorous testing, root-cause analysis, and defensive coding. On research, I track AI Coding, embodied intelligence, LLM pricing trends, and semiconductor-ETF holdings.</span>
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="sec"><span class="zh">技术技能</span><span class="en">Technical Skills</span></h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3><span class="zh">编程语言</span><span class="en">Languages</span></h3>
+          <div class="tags">
+            <span class="tag">C++</span><span class="tag">C#</span><span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><span class="zh">框架与界面</span><span class="en">Frameworks &amp; UI</span></h3>
+          <div class="tags">
+            <span class="tag">Qt</span><span class="tag">Dear ImGui</span><span class="tag">D3D12</span><span class="tag">Win32</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><span class="zh">工具链</span><span class="en">Tooling</span></h3>
+          <div class="tags">
+            <span class="tag">CMake</span><span class="tag">VS 2022</span><span class="tag">Git</span><span class="tag">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><span class="zh">领域</span><span class="en">Domains</span></h3>
+          <div class="tags">
+            <span class="tag"><span class="zh">量化分析</span><span class="en">Quant Analysis</span></span>
+            <span class="tag"><span class="zh">数据可视化</span><span class="en">Data Viz</span></span>
+            <span class="tag"><span class="zh">计算机网络</span><span class="en">Networking</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="sec"><span class="zh">项目</span><span class="en">Projects</span></h2>
+
+      <div class="proj">
+        <div class="row">
+          <div>
+            <h3><span class="zh">QuantTerminal（集团分析终端）</span><span class="en">QuantTerminal</span></h3>
+            <div class="stack">C++ · Qt · D3D12 · Dear ImGui</div>
+          </div>
+        </div>
+        <p>
+          <span class="zh">个人金融分析桌面终端。自研 D3D12 自定义 UI 渲染管线，追求专业金融终端质感；首页聚焦日收益率大卡、资本金、每日收益台账等核心模块，移除一切演示风格占位元素。</span>
+          <span class="en">A personal financial-analysis desktop terminal. Custom D3D12 UI rendering pipeline for a professional trading-terminal feel; the home screen centers on daily-return cards, capital, and a daily P&amp;L ledger — stripped of any demo/placeholder clutter.</span>
+        </p>
+        <div class="links">
+          <a href="{{QUANT_REPO}}">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="proj">
+        <div class="row">
+          <div>
+            <h3><span class="zh">滚齿机挂轮计算器（change-gear-calculator）</span><span class="en">Change-Gear Calculator</span></h3>
+            <div class="stack">C++</div>
+          </div>
+        </div>
+        <p>
+          <span class="zh">齿轮加工挂轮比计算工具，用于滚齿机挂轮选配。目标协作仓库 kennyboris5/change-gear-calculator。</span>
+          <span class="en">A gear hobbing change-gear ratio calculator for selecting hobbing-machine gear trains. Target collaboration repo: kennyboris5/change-gear-calculator.</span>
+        </p>
+        <div class="links">
+          <a href="{{GEAR_REPO}}">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="edu" id="education">
+      <h2 class="sec"><span class="zh">教育</span><span class="en">Education</span></h2>
+      <div class="row">
+        <div>
+          <h3>{{UNIVERSITY}}</h3>
+          <div class="meta">{{MAJOR}} · {{DEGREE}}</div>
+        </div>
+        <div class="meta">{{YEAR_START}} – {{YEAR_END}}</div>
+      </div>
+    </section>
+
+    <!-- COURSEWORK -->
+    <section id="coursework">
+      <h2 class="sec"><span class="zh">相关课程</span><span class="en">Coursework</span></h2>
+      <div class="flow">
+        <span class="tag"><span class="zh">算法设计与分析</span><span class="en">Algorithms</span></span>
+        <span class="tag"><span class="zh">计算机网络</span><span class="en">Computer Networks</span></span>
+        <span class="tag"><span class="zh">随机过程</span><span class="en">Stochastic Processes</span></span>
+        <span class="tag"><span class="zh">概率论与数理统计</span><span class="en">Probability &amp; Statistics</span></span>
+        <span class="tag"><span class="zh">管理运筹学</span><span class="en">Management OR</span></span>
+        <span class="tag"><span class="zh">经济学</span><span class="en">Economics</span></span>
+        <span class="tag"><span class="zh">操作系统</span><span class="en">Operating Systems</span></span>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests">
+      <h2 class="sec"><span class="zh">关注与兴趣</span><span class="en">Interests &amp; Focus</span></h2>
+      <div class="flow">
+        <span class="tag">AI Coding</span>
+        <span class="tag"><span class="zh">具身智能</span><span class="en">Embodied Intelligence</span></span>
+        <span class="tag"><span class="zh">大模型定价追踪</span><span class="en">LLM Pricing Tracker</span></span>
+        <span class="tag"><span class="zh">中韩半导体 ETF</span><span class="en">CN/KR Semiconductor ETF</span></span>
+        <span class="tag"><span class="zh">量化交易系统</span><span class="en">Quant Trading Systems</span></span>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Linus · Built with HTML/CSS · Hosted on GitHub Pages
+    </footer>
+  </div>
+
+<script>
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // language toggle
+  (function(){
+    var body = document.body;
+    var btns = document.querySelectorAll('#langToggle button');
+    function setLang(l){
+      body.classList.remove('lang-zh','lang-en');
+      body.classList.add('lang-' + l);
+      btns.forEach(function(b){ b.classList.toggle('active', b.dataset.lang === l); });
+      try{ localStorage.setItem('resume-lang', l); }catch(e){}
+    }
+    btns.forEach(function(b){
+      b.addEventListener('click', function(){ setLang(b.dataset.lang); });
+    });
+    var saved; try{ saved = localStorage.getItem('resume-lang'); }catch(e){}
+    if(saved){ setLang(saved); }
+  })();
+</script>
+</body>
+</html>
