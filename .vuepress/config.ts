@@ -8,7 +8,7 @@ export default {
   description: 'AI × Finance Entrepreneur / AI Major · Junior Year',
   bundler: viteBundler(),
   theme: defaultTheme({
-    colorMode: 'dark', // force dark
+    colorMode: 'light', // white + blue light palette
     navbar: false,
     sidebar: false,
     socialLinks: [

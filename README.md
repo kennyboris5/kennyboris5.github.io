@@ -17,8 +17,9 @@ I am an entrepreneur with an AI-first background oriented toward finance. I poss
 ## Research Experience
 
 - High-performance quant-analysis terminal benchmarked against top-tier quant firms (Ongoing · 2026.09)
-- Automatic factor-mining algorithm based on complex deep generative network architectures (Ongoing · 2026.10)
+- Automatic factor-mining algorithm based on complex deep generative model architectures (Ongoing · 2026.10)
 - Post-training and performance tuning of finance-oriented LLMs (Ongoing · 2026.10)
+- Agent R&D for practical finance scenarios (Ongoing · 2026.10)
 - Benchmarking of finance-oriented LLMs (Ongoing · 2026.10)
 - Frontier innovation research in finance based on econometric methods (Exploring direction · 2026.10)
 
@@ -32,4 +33,4 @@ Finance · Artificial Intelligence · CS229 Machine Learning · CS230 Deep Learn
 
 ## Education
 
-Tianjin University of Finance and Economics Pearl River College · Dept. of Information Science · AI Major · Undergraduate Junior (2024.06)
+Tianjin University of Finance and Economics Pearl River College · Dept. of Information Science and Technology · AI Major · Undergraduate Junior (2024.09–2028.06)

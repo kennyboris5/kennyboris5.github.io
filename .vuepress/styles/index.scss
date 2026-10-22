@@ -1,20 +1,108 @@
-// 微调默认主题，贴合简历排版
-.home-hero-description {
-  color: var(--c-accent-gold) !important;
-  font-family: var(--font-family-code, monospace);
+// ---------- Home hero ----------
+.vp-home {
+  // a bit more breathing room from the top
+  padding-top: 4.4rem;
 }
 
-.theme-default-content {
+.vp-hero {
+  // left aligned layout
+  text-align: left !important;
+  padding-bottom: 0.2rem;
+}
+
+// smaller name
+#main-title {
+  margin: 0 0 0.7rem;
+  font-size: 2.1rem !important;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #0b2f5c;
+
+  @media (max-width: 419px) {
+    font-size: 1.7rem;
+  }
+}
+
+// keep the tagline on ONE line
+.vp-hero-description {
+  max-width: none !important;
+  margin: 0;
+  font-size: 1rem !important;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  white-space: nowrap !important;
+  color: #14539f;
+
+  @media (max-width: 640px) {
+    font-size: 0.82rem;
+  }
+}
+
+// ---------- White card on blue background ----------
+.vp-home [vp-content] {
+  margin-top: 1.8rem;
+  padding: 2.2rem 2.4rem 1.4rem;
+
+  background: #ffffff;
+  border: 1px solid #cfe0f5;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgb(11 46 92 / 10%);
+
+  @media (max-width: 640px) {
+    padding: 1.4rem 1.2rem 1rem;
+  }
+}
+
+// ---------- Typography inside the card ----------
+.vp-home [vp-content] {
+  h2 {
+    margin: 2.2rem 0 0.9rem;
+    padding-left: 0.7rem;
+    border-top: none;
+    border-left: 3px solid #1e6fe0;
+
+    font-size: 1.12rem;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #14539f;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p,
+  li {
+    color: var(--vp-c-text);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    padding-left: 1.15rem;
+  }
+
+  li {
+    margin: 0.45rem 0;
+
+    &::marker {
+      color: #1e6fe0;
+    }
+  }
+
   a {
     font-weight: 500;
-  }
-  h2 {
-    border-top: none;
-    margin-top: 2.5rem;
+    color: #14539f;
+
+    &:hover {
+      color: #1e6fe0;
+    }
   }
 }
 
-// 内容区加一点左右留白，避免贴边
-.theme-default-content:not(.custom) {
-  max-width: 860px;
+// ---------- Footer ----------
+.vp-home-footer,
+.footer {
+  color: #33506f;
 }

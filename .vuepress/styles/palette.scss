@@ -1,13 +1,31 @@
+// White + Blue palette (light mode)
 :root {
-  // 金融终端暗色调色板
-  --c-bg: #0b0e14;
-  --c-bg-soft: #11151f;
-  --c-bg-alt: #141a26;
-  --c-border: #232c3d;
-  --c-text: #e6edf3;
-  --c-text-dim: #9aa7b8;
-  --c-brand: #2dd4bf;          // teal 主色
-  --c-brand-light: #5eead4;
-  --c-brand-dark: #0d9488;
-  --c-accent-gold: #f5b942;    // 金色强调
+  // accent
+  --vp-c-accent: #14539f;
+  --vp-c-accent-bg: #1e6fe0;
+  --vp-c-accent-hover: #3b86f0;
+  --vp-c-accent-text: #ffffff;
+  --vp-c-accent-soft: rgb(30 111 224 / 10%);
+
+  // background: page is blue, surfaces are white
+  --vp-c-bg: #dbe9fb;
+  --vp-c-bg-alt: #ffffff;
+  --vp-c-bg-elv: #ffffff;
+
+  // text
+  --vp-c-text: #0e2440;
+  --vp-c-text-mute: #33506f;
+  --vp-c-text-subtle: #5b7593;
+
+  // borders
+  --vp-c-divider: #c3d8f1;
+  --vp-c-border: #a9c8e9;
+  --vp-c-border-hard: #8fb2da;
+
+  // shadow
+  --vp-c-shadow: rgb(11 46 92 / 14%);
+
+  // layout surfaces
+  --vp-navbar-c-bg: #ffffff;
+  --vp-sidebar-c-bg: #ffffff;
 }
