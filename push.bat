@@ -1,13 +1,39 @@
 @echo off
-REM ============================================================
-REM  一键推送简历到 GitHub Pages
-REM  使用前：先在 GitHub 网页建仓库，名称必须为 kennyboris5.github.io（Public）
-REM  然后双击本文件即可。凭据管理器会弹窗登录（或用已缓存账号）。
-REM  若提示输入密码：用户名 kennyboris5，密码填你的 PAT。
-REM ============================================================
+setlocal
 cd /d "%~dp0"
-git push -u origin main
+
+echo ===================================================
+echo  VuePress Resume - Push to GitHub
+echo ===================================================
 echo.
-echo 推送结束。若上方出现 "Could not connect"，说明你本机也需走代理，
-echo 请先在此窗口执行： set HTTPS_PROXY=地址:端口  然后再跑一次。
+echo This script runs on YOUR machine (with internet).
+echo Before running, create the repo on github.com:
+echo   Name: kennyboris5.github.io   (must be Public)
+echo.
+
+where git >nul 2>&1
+if errorlevel 1 (
+  echo [ERROR] git not found in PATH. Install Git for Windows first.
+  pause
+  exit /b 1
+)
+
+git push -u origin main
+if errorlevel 1 (
+  echo.
+  echo [ERROR] Push failed. Common causes:
+  echo   1. Repo "kennyboris5.github.io" not created yet (must be Public)
+  echo   2. Not signed in: credential popup will ask; or enter
+  echo      username = kennyboris5, password = your PAT
+  echo   3. Behind a proxy: run  set HTTPS_PROXY=host:port  first
+  echo.
+  pause
+  exit /b 1
+)
+
+echo.
+echo [OK] Pushed. GitHub Actions builds and deploys in ~1-2 min.
+echo      Site: https://kennyboris5.github.io   (zh /  en /en/)
+echo      Repo Settings - Pages - Source: GitHub Actions
+echo.
 pause
