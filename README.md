@@ -1,39 +1,35 @@
 ---
 home: true
-title: 赵渊超 (Linus) · 个人主页
-heroText: 赵渊超 (Linus)
-tagline: 大三本科在校生 · 21岁 · AI×金融创业者
-actions:
-  - text: English 版
-    link: /en/
-    type: secondary
+title: Zhao Yuanchao (Linus) · Resume
+heroText: Zhao Yuanchao (Linus)
+tagline: Undergraduate Junior · Age 21 · AI×Finance Entrepreneur
 ---
 
-## 联系方式
+## Contact
 
-- GitHub：[@kennyboris5](https://github.com/kennyboris5)
-- Email：zyc52112574@gmail.com
+- GitHub: [@kennyboris5](https://github.com/kennyboris5)
+- Email: zyc52112574@gmail.com
 
-## 介绍
+## About
 
-我是一位以人工智能前沿技术出身面向金融的创业者。我具备扎实且前沿的人工智能能力，自学斯坦福 Online Course 人工智能研究生课程；自修结束金融学专业课程，具备专业的金融认知；经常参与两学科相关前沿讲座、学术论坛。
+I am an entrepreneur with an AI-first background oriented toward finance. I possess solid and cutting-edge AI capabilities, having self-studied the Stanford Online Course AI graduate curriculum; I have completed self-study of the finance major curriculum and possess professional financial literacy; I frequently participate in frontier lectures and academic forums across both AI and finance.
 
-## 科研经历
+## Research Experience
 
-- 对标头部量化机构的高性能量化分析终端（在研 · 2026.09）
-- 基于复杂深度生成网络架构的因子自动挖掘算法（在研 · 2026.10）
-- 面向金融场景的大模型的后训练及性能调优（在研 · 2026.10）
-- 面向金融场景的大模型 benchmark（在研 · 2026.10）
-- 基于计量方法基于的金融学前沿热点创新研究（正在找方向 · 2026.10）
+- High-performance quant-analysis terminal benchmarked against top-tier quant firms (Ongoing · 2026.09)
+- Automatic factor-mining algorithm based on complex deep generative network architectures (Ongoing · 2026.10)
+- Post-training and performance tuning of finance-oriented LLMs (Ongoing · 2026.10)
+- Benchmarking of finance-oriented LLMs (Ongoing · 2026.10)
+- Frontier innovation research in finance based on econometric methods (Exploring direction · 2026.10)
 
-## 目前感兴趣的研究方向
+## Current Research Interests
 
-量化金融（QuantFinance） · 大模型研发 · 自然语言处理（NLP）
+Quant Finance · LLM R&D · Natural Language Processing (NLP)
 
-## 所修课程
+## Coursework
 
-金融学 · 人工智能 · CS229 机器学习 · CS230 深度学习 · 管理学
+Finance · Artificial Intelligence · CS229 Machine Learning · CS230 Deep Learning · Management
 
-## 学历信息
+## Education
 
-天津财经大学珠江学院 · 信科系 · 人工智能专业 · 大三在读（2024.06）
+Tianjin University of Finance and Economics Pearl River College · Dept. of Information Science · AI Major · Undergraduate Junior (2024.06)

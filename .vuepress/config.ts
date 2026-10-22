@@ -2,30 +2,18 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 
 export default {
-  base: '/', // 用户站点 kennyboris5.github.io 根路径；若是项目页改成 '/<repo>/'
+  base: '/', // user site root: kennyboris5.github.io
+  lang: 'en-US',
+  title: 'Zhao Yuanchao (Linus) · Resume',
+  description: 'AI × Finance Entrepreneur / AI Major · Junior Year',
   bundler: viteBundler(),
-  locales: {
-    '/': {
-      lang: 'zh-CN',
-      title: '赵渊超 (Linus) · 个人主页',
-      description: 'AI × 金融 创业者 / 人工智能专业 · 大三在读',
-    },
-    '/en/': {
-      lang: 'en-US',
-      title: 'Zhao Yuanchao (Linus) · Resume',
-      description: 'AI × Finance Entrepreneur / AI Major · Junior Year',
-    },
-  },
   theme: defaultTheme({
-    colorMode: 'dark', // 强制暗色，契合金融终端质感
-    navbar: [
-      { text: '中文', link: '/' },
-      { text: 'English', link: '/en/' },
-    ],
+    colorMode: 'dark', // force dark
+    navbar: false,
     sidebar: false,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/kennyboris5' },
     ],
-    footer: 'Copyright © ' + new Date().getFullYear() + ' 赵渊超 (Linus) · Built with VuePress',
+    footer: 'Copyright © ' + new Date().getFullYear() + ' Zhao Yuanchao (Linus) · Built with VuePress',
   }),
 }
