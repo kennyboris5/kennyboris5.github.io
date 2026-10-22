@@ -1,31 +1,44 @@
-// White + Blue palette (light mode)
+// Plain white page + vibrant blue accents
 :root {
-  // accent
-  --vp-c-accent: #14539f;
-  --vp-c-accent-bg: #1e6fe0;
-  --vp-c-accent-hover: #3b86f0;
+  // accent (vivid blue)
+  --vp-c-accent: #2674d9;
+  --vp-c-accent-bg: #3b8cf7;
+  --vp-c-accent-hover: #5aa2ff;
   --vp-c-accent-text: #ffffff;
-  --vp-c-accent-soft: rgb(30 111 224 / 10%);
+  --vp-c-accent-soft: rgb(59 140 247 / 12%);
 
-  // background: page is blue, surfaces are white
-  --vp-c-bg: #dbe9fb;
+  // surfaces: all white, no elevated cards
+  --vp-c-bg: #ffffff;
   --vp-c-bg-alt: #ffffff;
   --vp-c-bg-elv: #ffffff;
 
   // text
-  --vp-c-text: #0e2440;
-  --vp-c-text-mute: #33506f;
-  --vp-c-text-subtle: #5b7593;
+  --vp-c-text: #1c2b3a;
+  --vp-c-text-mute: #44586e;
+  --vp-c-text-subtle: #6b8098;
 
   // borders
-  --vp-c-divider: #c3d8f1;
-  --vp-c-border: #a9c8e9;
-  --vp-c-border-hard: #8fb2da;
+  --vp-c-divider: #e6eef8;
+  --vp-c-border: #d5e3f3;
+  --vp-c-border-hard: #c2d5ec;
 
-  // shadow
-  --vp-c-shadow: rgb(11 46 92 / 14%);
+  // shadow (minimal)
+  --vp-c-shadow: rgb(11 46 92 / 8%);
 
   // layout surfaces
   --vp-navbar-c-bg: #ffffff;
   --vp-sidebar-c-bg: #ffffff;
+
+  // site tokens
+  --site-heading: #2674d9;
+  --site-heading-bar: #5aa2ff;
+}
+
+// Section-heading typeface
+@font-face {
+  font-family: 'Fontin SmallCaps';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/FontinSmallCaps.ttf') format('truetype');
 }

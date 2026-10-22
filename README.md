@@ -25,7 +25,7 @@ I am an entrepreneur with an AI-first background oriented toward finance. I poss
 
 ## Current Research Interests
 
-Quant Finance · LLM R&D · Natural Language Processing (NLP)
+Quantitative Finance · LLM R&D · Natural Language Processing (NLP)
 
 ## Coursework
 
