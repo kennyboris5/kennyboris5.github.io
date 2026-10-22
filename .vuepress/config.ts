@@ -1,7 +1,7 @@
-const { defaultTheme } = require('@vuepress/theme-default')
-const { viteBundler } = require('@vuepress/bundler-vite')
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
 
-module.exports = {
+export default {
   base: '/', // 用户站点 kennyboris5.github.io 根路径；若是项目页改成 '/<repo>/'
   bundler: viteBundler(),
   locales: {
@@ -17,7 +17,7 @@ module.exports = {
     },
   },
   theme: defaultTheme({
-    darkmode: 'force', // 强制暗色，契合金融终端质感
+    colorMode: 'dark', // 强制暗色，契合金融终端质感
     navbar: [
       { text: '中文', link: '/' },
       { text: 'English', link: '/en/' },

@@ -10,6 +10,7 @@
   "devDependencies": {
     "vuepress": "next",
     "@vuepress/theme-default": "next",
-    "@vuepress/bundler-vite": "next"
+    "@vuepress/bundler-vite": "next",
+    "sass": "^1.105.0"
   }
 }
