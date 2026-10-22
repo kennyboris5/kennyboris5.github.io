@@ -6,8 +6,8 @@ echo ===================================================
 echo  VuePress Resume - Push to GitHub
 echo ===================================================
 echo.
-echo Repo: linuschao.github.io   (user page, must be Public)
-echo Site: https://linuschao.github.io
+echo Repo: kennyboris5.github.io   (user page, must be Public)
+echo Site: https://kennyboris5.github.io
 echo.
 
 where git >nul 2>&1
@@ -30,9 +30,9 @@ if errorlevel 1 (
   if errorlevel 1 (
     echo.
     echo [ERROR] Push failed. Common causes:
-    echo   1. Repo "linuschao.github.io" not created yet ^(must be Public^)
+    echo   1. Repo "kennyboris5.github.io" not created yet ^(must be Public^)
     echo   2. Not signed in: credential popup will ask; or enter
-    echo      username = linuschao, password = your PAT
+    echo      username = kennyboris5, password = your PAT
     echo      ^(PAT needs scopes: repo + workflow^)
     echo   3. Behind a proxy: run  set HTTPS_PROXY=host:port  first
     echo   4. Network blocked: check you are online / VPN is off
@@ -44,7 +44,7 @@ if errorlevel 1 (
 
 echo.
 echo [OK] Pushed. GitHub Actions builds and deploys in ~1-2 min.
-echo      Site: https://linuschao.github.io
+echo      Site: https://kennyboris5.github.io
 echo      Repo Settings - Pages - Source: GitHub Actions
 echo.
 pause

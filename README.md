@@ -7,7 +7,7 @@ tagline: Undergraduate Junior · Age 21 · AI×Finance Entrepreneur
 
 ## Contact
 
-- GitHub: [@linuschao](https://github.com/linuschao)
+- GitHub: [@kennyboris5](https://github.com/kennyboris5)
 - Email: zyc52112574@gmail.com
 
 ## About
