@@ -8,8 +8,8 @@
     "serve": "vuepress dev --host"
   },
   "devDependencies": {
-    "vuepress": "^2.0.0",
-    "@vuepress/theme-default": "^2.0.0",
-    "@vuepress/bundler-vite": "^2.0.0"
+    "vuepress": "next",
+    "@vuepress/theme-default": "next",
+    "@vuepress/bundler-vite": "next"
   }
 }
