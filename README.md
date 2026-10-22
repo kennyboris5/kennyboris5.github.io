@@ -11,7 +11,7 @@ actions:
 
 ## 联系方式
 
-- GitHub：[@linuschao](https://github.com/linuschao)
+- GitHub：[@kennyboris5](https://github.com/kennyboris5)
 - Email：zyc52112574@gmail.com
 
 ## 介绍
