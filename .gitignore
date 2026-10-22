@@ -1,1 +1,7 @@
 .workbuddy/
+node_modules/
+.vuepress/dist/
+.vuepress/cache/
+.vuepress/temp/
+.vuepress/.cache/
+*.log

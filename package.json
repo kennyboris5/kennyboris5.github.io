@@ -1,0 +1,15 @@
+{
+  "name": "linus-resume",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "serve": "vuepress dev --host"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0",
+    "@vuepress/theme-default": "^2.0.0",
+    "@vuepress/bundler-vite": "^2.0.0"
+  }
+}
