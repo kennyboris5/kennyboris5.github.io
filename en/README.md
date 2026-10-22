@@ -11,7 +11,7 @@ actions:
 
 ## Contact
 
-- GitHub：[@kennyboris5](https://github.com/kennyboris5)
+- GitHub：[@linuschao](https://github.com/linuschao)
 - Email：zyc52112574@gmail.com
 - City：Tianjin (inferred from school name — please confirm)
 
@@ -50,7 +50,7 @@ Quant Finance · LLM R&D · Natural Language Processing (NLP)
 
 - Stack：C++
 - A gear hobbing change-gear ratio calculator for selecting hobbing-machine gear trains.
-- Repo：[kennyboris5/change-gear-calculator](https://github.com/kennyboris5/change-gear-calculator)
+- Repo：[linuschao/change-gear-calculator](https://github.com/linuschao/change-gear-calculator)
 
 ## Education
 

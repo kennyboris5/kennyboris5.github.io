@@ -11,7 +11,7 @@ actions:
 
 ## 联系方式
 
-- GitHub：[@kennyboris5](https://github.com/kennyboris5)
+- GitHub：[@linuschao](https://github.com/linuschao)
 - Email：zyc52112574@gmail.com
 - 城市：天津（据校名推断，请确认）
 
@@ -50,7 +50,7 @@ actions:
 
 - 技术栈：C++
 - 齿轮加工挂轮比计算工具，用于滚齿机挂轮选配。
-- 仓库：[kennyboris5/change-gear-calculator](https://github.com/kennyboris5/change-gear-calculator)
+- 仓库：[linuschao/change-gear-calculator](https://github.com/linuschao/change-gear-calculator)
 
 ## 教育
 

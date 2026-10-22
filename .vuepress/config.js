@@ -2,7 +2,7 @@ const { defaultTheme } = require('@vuepress/theme-default')
 const { viteBundler } = require('@vuepress/bundler-vite')
 
 module.exports = {
-  base: '/', // 用户站点 kennyboris5.github.io 根路径；若是项目页改成 '/<repo>/'
+  base: '/', // 用户站点 linuschao.github.io 根路径；若是项目页改成 '/<repo>/'
   bundler: viteBundler(),
   locales: {
     '/': {
@@ -24,7 +24,7 @@ module.exports = {
     ],
     sidebar: false,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/kennyboris5' },
+      { icon: 'github', link: 'https://github.com/linuschao' },
     ],
     footer: 'Copyright © ' + new Date().getFullYear() + ' 赵渊超 (Linus) · Built with VuePress',
   }),
