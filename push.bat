@@ -18,7 +18,10 @@ if errorlevel 1 (
   exit /b 1
 )
 
-git push -u origin main
+REM NOTE: --force is REQUIRED this time only, because the commit
+REM author history was rewritten locally to fix wrong attribution.
+REM After this one push, future pushes can use normal "git push".
+git push --force origin main
 if errorlevel 1 (
   echo.
   echo [ERROR] Push failed. Common causes:
@@ -26,6 +29,8 @@ if errorlevel 1 (
   echo   2. Not signed in: credential popup will ask; or enter
   echo      username = linuschao, password = your PAT
   echo   3. Behind a proxy: run  set HTTPS_PROXY=host:port  first
+  echo   4. Local origin/main tracking is stale: run  git fetch origin
+  echo      first, then re-run this script.
   echo.
   pause
   exit /b 1
