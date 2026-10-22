@@ -1,8 +1,8 @@
 ---
 home: true
-title: Linus · Resume
-heroText: Linus
-tagline: CS Student / Developer — Quant & Desktop Applications
+title: Zhao Yuanchao (Linus) · Resume
+heroText: Zhao Yuanchao (Linus)
+tagline: AI × Finance Entrepreneur / AI Major · Junior Year
 actions:
   - text: 中文版
     link: /
@@ -12,19 +12,31 @@ actions:
 ## Contact
 
 - GitHub：[@kennyboris5](https://github.com/kennyboris5)
-- Email：{{EMAIL}}
-- City：{{CITY}}
+- Email：zyc52112574@gmail.com
+- City：Tianjin (inferred from school name — please confirm)
 
 ## About
 
-Dual-profile developer and student. On engineering, I iterate within the chosen stack, favoring rigorous testing, root-cause analysis, and defensive coding. On research, I track AI Coding, embodied intelligence, LLM pricing trends, and semiconductor-ETF holdings.
+An entrepreneur at the intersection of AI and finance, with an AI-first background. Solid and up-to-date AI expertise — self-studied the Stanford Online AI graduate curriculum; self-taught the finance major curriculum with professional financial literacy; actively participates in frontier lectures and academic forums across both AI and finance.
 
 ## Technical Skills
 
 - **Languages**：C++ · C# · Python
 - **Frameworks & UI**：Qt · Dear ImGui · D3D12 · Win32
 - **Tooling**：CMake · Visual Studio 2022 · Git · Node.js
-- **Domains**：Quant Analysis · Data Viz · Networking
+- **Domains**：Quant Analysis · Data Viz · AI · Financial Engineering
+
+## Research
+
+- **High-performance quant-analysis terminal benchmarked against top-tier quant firms**（Ongoing · 2026.09）
+- **Automatic factor-mining algorithm based on complex deep generative network architectures**（Ongoing · 2026.10）
+- **Post-training and performance tuning of finance-oriented LLMs**（Ongoing · 2026.10）
+- **Benchmarking of finance-oriented LLMs**（Ongoing · 2026.10）
+- **Frontier innovation research in finance based on econometric methods**（Direction exploration · 2026.10）
+
+## Research Interests
+
+Quant Finance · LLM R&D · Natural Language Processing (NLP)
 
 ## Projects
 
@@ -42,12 +54,12 @@ Dual-profile developer and student. On engineering, I iterate within the chosen 
 
 ## Education
 
-- {{UNIVERSITY}} — {{MAJOR}} · {{DEGREE}}
-- {{YEAR_START}} – {{YEAR_END}}
+- Tianjin University of Finance and Economics Pearl River College · Dept. of Information Science · AI Major · Undergraduate (Junior)
+- 2023 – 2027 (expected; inferred from junior-year status — please confirm)
 
 ## Coursework
 
-Algorithms · Computer Networks · Stochastic Processes · Probability & Statistics · Management OR · Economics · Operating Systems
+Finance · Artificial Intelligence · CS229 Machine Learning · CS230 Deep Learning · Management
 
 ## Interests
 

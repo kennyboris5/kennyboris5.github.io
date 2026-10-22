@@ -7,13 +7,13 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'Linus · 个人主页',
-      description: '计算机专业学生 / 开发者 — 量化与桌面应用方向',
+      title: '赵渊超 (Linus) · 个人主页',
+      description: 'AI × 金融 创业者 / 人工智能专业 · 大三在读',
     },
     '/en/': {
       lang: 'en-US',
-      title: 'Linus · Resume',
-      description: 'CS Student / Developer — Quant & Desktop Applications',
+      title: 'Zhao Yuanchao (Linus) · Resume',
+      description: 'AI × Finance Entrepreneur / AI Major · Junior Year',
     },
   },
   theme: defaultTheme({
@@ -26,6 +26,6 @@ module.exports = {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/kennyboris5' },
     ],
-    footer: 'Copyright © ' + new Date().getFullYear() + ' Linus · Built with VuePress',
+    footer: 'Copyright © ' + new Date().getFullYear() + ' 赵渊超 (Linus) · Built with VuePress',
   }),
 }
