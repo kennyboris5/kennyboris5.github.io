@@ -30,7 +30,3 @@ Quantitative Finance · LLM R&D · Natural Language Processing (NLP)
 ## Coursework
 
 Finance · Artificial Intelligence · Management
-
-## Education
-
-Tianjin University of Finance and Economics Pearl River College · Dept. of Information Science and Technology · AI Major · Undergraduate Junior (2024.09–2028.06)
